@@ -1,0 +1,33 @@
+body{
+    background:linear-gradient(to left, red, yellow, orange);
+}
+#seccion_1{
+    background-color: rgb(145, 255, 0);
+    width: 20%;
+}
+#camara, #resultado{
+    border-color: red;
+    border-width: 5px;
+    border-style: dashed;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(65, 235, 221);
+}
+#div_grande{
+    display: flex;
+    margin-left: 560px;
+}
+#tomar_foto{
+background-color: rgb(255, 0, 0);
+padding: 5px;
+color: white;
+}
+#identificar_foto{
+background-color: blue;
+padding: 5px;
+color: white;
+}
+#div_grande2{
+    display: flex;
+    margin-left: 700px;
+}

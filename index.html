@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <center>
+ <h1>Aplicacion de reconocimiento facial</h1>
+ <h3>El modelo puede reconocer las siguientes expresiones</h3>
+ <p></p>
+ <hr>
+ <p></p>
+ <section id="seccion_1">
+    <h3>Feliz 😀</h3>
+    <h3>Enojado 😠</h3>
+    <h3>Triste 😭</h3>
+    <h3>Sorprendido 😮</h3>
+    <h3>Asustado 😨</h3>
+    <h3>Serio 😐</h3>
+    <h3>Riendo 🤣</h3>
+ </section>
+ <hr>
+ <div id="div_grande">
+    <div style="padding: 30px;">
+        <h1>Vista de la camara</h1>
+        <p></p>
+        <div id="camara"></div>
+    </div>
+    <div style="padding: 30px;">
+        <h1>Vista del resultado</h1>
+        <p></p>
+        <div id="resultado"></div>
+    </div>
+ </div>
+ <button onclick="tomar_selfie()" id="tomar_foto">Tomar foto:</button>
+ <button onclick="identificar_selfie()" id="identificar_foto">Identificar foto:</button>
+ <p></p>
+ <div id="div_grande2">
+    <div style="padding: 30px;"><h1>Objeto</h1>
+    <h1 id="lectura_etiqueta"></h1></div>
+    <div style="padding: 30px;"><h1>Precision</h1>
+    <h1 id="Precision_objeto"></h1></div>
+ </div>
+    </center>
+<script src="main.js"></script>
+</body>
+</html>
